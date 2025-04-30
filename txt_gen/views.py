@@ -8,7 +8,7 @@ from tensorflow import keras
 from tensorflow.keras.preprocessing.text import tokenizer_from_json
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
-model = keras.models.load_model('txt_gen/static/models/text_generation_model_2025-04-29.h5')
+model = keras.models.load_model('txt_gen/static/models/text_generation_model_2025-04-30.h5')
 
 with open('txt_gen/static/models/tokenizer.json', 'r', encoding='utf-8') as f:
     tokenizer_data =json.load(f)
