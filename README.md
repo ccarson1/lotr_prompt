@@ -2,7 +2,7 @@
 
 To build and run the Django application using Docker, follow these steps:
 
-1.**Download the Docker file
+1. **Download the Docker file**
 
 2. **Build the Docker image** (without using cached layers):
 
