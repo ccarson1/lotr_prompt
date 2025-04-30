@@ -1,0 +1,136 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    background-color: #0d1117;
+    
+}
+
+.header-1{
+    color: azure;
+    font-family: "UnifrakturCook", cursive;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.header-2{
+    color: azure;
+    font-family: "UnifrakturCook", cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#main-containter{
+    height: 100vh;
+    width: 80%;
+    border: 1px solid white;
+}
+
+#output-text {
+    overflow-y: scroll;
+    height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outputs{
+    color: azure;
+    font-size: 1.5rem;
+
+    bottom: 5%;
+    right: 120px;
+    min-height: 30px; 
+    width: 80%; 
+    text-wrap: wrap;
+    padding: 10px; 
+    background-color: rgba(35,35,39, 0.7); 
+    border-radius: 10px; 
+}
+
+/* Customize the scrollbar track (the part the thumb moves along) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Darker color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Customize the scrollbar thumb when hovering */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+/* Customize the scrollbar track (the background) */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Lighter color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#input-prompt-container {
+    position: fixed;
+    bottom: 15%; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    padding: 8px;
+    width: 80%;
+    height: 30px;
+    border: .1px solid white;
+    color: azure;
+    background-color: #212327;
+    border-radius: 25px;
+}
+
+#input-prompt{
+    font-size: 1.2rem;
+    background-color: rgba(33, 35, 39, .0);
+    border: none;
+    padding: 8px;
+    color: azure;
+    width: 100%;
+}
+
+#input-prompt:focus{
+    outline: none;
+}
+
+#gen-button {
+    
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 16px;
+    background-color: #212327;
+    color: azure;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#gen-button:hover{
+    opacity: .5;
+    transition: .3s;
+    background-color: rgb(112, 121, 121);
+}
+
+.fa-copy{
+    transition: .3s;
+    padding: 8px;
+    border-radius: 50%;
+
+}
+.fa-copy:hover{
+    transition: .3s;
+    background-color: azure;
+    color: #212327;
+}
