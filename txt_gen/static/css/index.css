@@ -50,6 +50,20 @@ body{
     border-radius: 10px; 
 }
 
+#container{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: fit-content;
+}
+#count{
+    border-radius: 8px;
+    background-color: rgba(33, 35, 39, .0);
+    color: azure;
+    border: 1px solid white;
+    padding: 5px;
+}
+
 /* Customize the scrollbar track (the part the thumb moves along) */
 ::-webkit-scrollbar {
     width: 12px; /* Width of the vertical scrollbar */

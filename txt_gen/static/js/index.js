@@ -71,6 +71,7 @@ async function CallGenerateText() {
       },
       body: JSON.stringify({
         seed: document.getElementById("input-prompt").value,
+        count: document.getElementById("count").value
       })
     });
 

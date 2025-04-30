@@ -49,10 +49,11 @@ def home(request):
         data = json.loads(request.body)
 
         seed = data.get('seed', '')
+        count = data.get('count', '')
 
         print(model.summary())
 
-        next_words = 20
+        next_words = int(count)
 
         generated_text = generate_text(seed, next_words, max_sequence_len=20, temperature=0.7)
 
