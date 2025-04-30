@@ -1,4 +1,4 @@
-### Running the Django Application with Docker
+### Running the Lord of the Rings Prompt with Docker
 
 To build and run the Django application using Docker, follow these steps:
 
