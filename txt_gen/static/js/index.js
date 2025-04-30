@@ -59,23 +59,27 @@ document.getElementById("input-prompt").addEventListener("keydown", function (ev
 });
 
 async function CallGenerateText() {
-  fetch('http://localhost:8000/', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-CSRFToken': csrftoken,
-    },
-    body: JSON.stringify({
-      seed: document.getElementById("input-prompt").value,
+  const spinner = document.getElementById("spinner");
+  spinner.style.display = "block"; 
 
-    })
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Server responded with:', data);
-      addOutput(data['Generated Text']);
-    })
-    .catch(error => {
-      console.error('Error:', error);
+  try {
+    const response = await fetch('http://localhost:8000/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRFToken': csrftoken,
+      },
+      body: JSON.stringify({
+        seed: document.getElementById("input-prompt").value,
+      })
     });
+
+    const data = await response.json();
+    console.log('Server responded with:', data);
+    addOutput(data['Generated Text']);
+  } catch (error) {
+    console.error('Error:', error);
+  } finally {
+    spinner.style.display = "none";
+  }
 }
