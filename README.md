@@ -14,4 +14,7 @@ To build and run the Django application using Docker, follow these steps:
    ```bash
    docker run -p 8000:8000 lotr_prompt_1.0.0
 
+4. **Open the application in the web browser**
+   http://localhost:8000/
+
   
